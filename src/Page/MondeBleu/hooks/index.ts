@@ -1,0 +1,1 @@
+export { useInflationSimulator } from './useInflationSimulator';

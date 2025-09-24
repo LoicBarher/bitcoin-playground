@@ -1,0 +1,1 @@
+export { MondeBleuPage } from './components';

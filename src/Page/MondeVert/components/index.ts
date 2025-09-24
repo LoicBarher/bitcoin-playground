@@ -1,0 +1,1 @@
+export { MondeVertPage } from './MondeVertPage';

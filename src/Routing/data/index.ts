@@ -1,0 +1,1 @@
+export { ROUTE_NAME } from './ROUTE_NAME';

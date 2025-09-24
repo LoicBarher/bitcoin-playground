@@ -1,0 +1,41 @@
+/*
+ * @fileoverview Global stylesheet for the application.
+ * This file establishes a sane baseline for styling across the entire app.
+ */
+
+/*
+ * Reset default browser styles for consistency.
+ * - box-sizing: border-box makes layout calculations more intuitive.
+ * - margin: 0 removes default margins from the body.
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+ * Ensure the root elements stretch to the full viewport height and width.
+ * This is crucial for creating full-screen layouts without unwanted white borders.
+ */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif; /* A clean, modern font */
+}
+
+/*
+ * A simple utility class for hiding scrollbars if needed.
+ */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

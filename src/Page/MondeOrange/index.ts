@@ -1,0 +1,1 @@
+export { MondeOrangePage } from './components';
