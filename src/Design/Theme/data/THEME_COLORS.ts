@@ -1,98 +1,130 @@
 export const THEME_COLORS = {
   dark: {
-    background: {
-      primary: "#121212",
-      secondary: "#1E1E1E",
-      tertiary: "#2A2A2A",
-      hover: "rgba(255, 255, 255, 0.08)",
-    },
-    text: {
-      primary: "#E0E0E0",
-      secondary: "#A0A0A0",
-      disabled: "#616161",
-    },
-    border: {
-      primary: "#424242",
-      secondary: "#2A2A2A",
-    },
-    accent: {
-      blue: {
-        primary: "#2196F3",
-        hover: "#1976D2",
-        text: "#FFFFFF",
+    base: {
+      background: {
+        primary: "#020617",
+        secondary: "#0f172a",
+        tertiary: "#1e293b",
+        hover: "rgba(255, 255, 255, 0.08)",
       },
-      orange: {
-        primary: "#FF9800",
-        hover: "#F57C00",
-        text: "#000000",
+      text: {
+        primary: "#E0E0E0",
+        secondary: "#9E9E9E",
       },
-      green: {
-        primary: "#4CAF50",
-        hover: "#388E3C",
-        text: "#FFFFFF",
+      border: {
+        primary: "#2B2B2B",
+        secondary: "#475569",
+        tertiary: "#E0E0E0",
       },
     },
-    semantic: {
-      error: {
-        primary: "#CF6679",
-        text: "#000000",
+    blue: {
+      background: {
+        primary: "#334155",
       },
-      success: {
-        primary: "#03DAC6",
-        text: "#000000",
+      text: {
+        primary: "#93c5fd",
+        secondary: "#2563eb",
+      },
+      border: {
+        primary: "#475569",
+        secondary: "#3B82F6",
       },
     },
-    state: {
-      focusRing: "#64B5F6",
-      disabledBackground: "#333333",
+    orange: {
+      background: {
+        primary: "#431407",
+      },
+      text: {
+        primary: "#fdba74",
+        secondary: "#ea580c",
+      },
+      border: {
+        primary: "#FED7AA",
+        secondary: "#F97316",
+      },
+    },
+    emerald: {
+      background: {
+        primary: "#022C22",
+      },
+      text: {
+        primary: "#6ee7b7",
+        secondary: "#059669",
+      },
+      border: {
+        primary: "#A7F3D0",
+        secondary: "#10B981",
+      },
+    },
+    boxShadow: {
+      soft: "box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+      strong:
+        "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+      bottom: "box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px",
     },
   },
   light: {
-    background: {
-      primary: "#F5F5F5", // Fond principal (gris très clair)
-      secondary: "#FFFFFF", // Pour les cartes, la barre de navigation (blanc)
-      tertiary: "#E0E0E0", // Pour les survols ou éléments imbriqués (gris clair)
-      hover: "rgba(0, 0, 0, 0.04)", // Survol subtil
-    },
-    text: {
-      primary: "#212121", // Texte principal (presque noir)
-      secondary: "#757575", // Texte secondaire (gris moyen)
-      disabled: "#BDBDBD", // Texte désactivé (gris clair)
-    },
-    border: {
-      primary: "#E0E0E0", // Bordures principales
-      secondary: "#F5F5F5", // Bordures plus subtiles
-    },
-    accent: {
-      blue: {
-        primary: "#1976D2", // Couleur plus foncée pour la lisibilité
-        hover: "#1565C0",
-        text: "#FFFFFF",
+    base: {
+      background: {
+        primary: "#FFFFFF",
+        secondary: "#1E293B",
+        tertiary: "#64748B",
+        hover: "rgba(255, 255, 255, 0.04)",
       },
-      orange: {
-        primary: "#F57C00",
-        hover: "#EF6C00",
-        text: "#FFFFFF", // Texte blanc pour un meilleur contraste
+      text: {
+        primary: "#212121",
+        secondary: "#757575",
       },
-      green: {
-        primary: "#388E3C",
-        hover: "#2E7D32",
-        text: "#FFFFFF",
+      border: {
+        primary: "#F1F5F9",
+        secondary: "#CBD5E1",
+        tertiary: "#E0E0E0",
       },
     },
-    semantic: {
-      error: {
-        primary: "#D32F2F",
-        text: "#FFFFFF",
+    blue: {
+      background: {
+        primary: "#172554",
       },
-      success: {
-        primary: "#00796B",
-        text: "#FFFFFF",
+      text: {
+        primary: "#172554",
+        secondary: "#2563eb",
+      },
+      border: {
+        primary: "#BFDBFE",
+        secondary: "#3B82F6",
       },
     },
-    state: {
-      focusRing: "#1976D2",
-      disabledBackground: "#E0E0E0",
+    orange: {
+      background: {
+        primary: "#431407",
+      },
+      text: {
+        primary: "#ea580c",
+        secondary: "#431407",
+      },
+      border: {
+        primary: "#FED7AA",
+        secondary: "#F97316",
+      },
+    },
+    emerald: {
+      background: {
+        primary: "#022C22",
+      },
+      text: {
+        primary: "#059669",
+        secondary: "#022c22",
+      },
+      border: {
+        primary: "#A7F3D0",
+        secondary: "#10B981",
+      },
+    },
+    boxShadow: {
+      soft: "box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+      strong:
+        "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+      bottom: "box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px",
     },
   },
 };

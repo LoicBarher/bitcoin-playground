@@ -1,0 +1,1 @@
+export { getWorldThemeColorName } from './getWorldThemeColorName';

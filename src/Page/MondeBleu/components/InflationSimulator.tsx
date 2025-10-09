@@ -32,7 +32,7 @@ export const InflationSimulator: FC = () => {
   };
 
   const labelStyle: CSSProperties = {
-    color: colors.text.primary,
+    color: colors.base.text.primary,
     fontWeight: 500,
   };
 
@@ -44,9 +44,9 @@ export const InflationSimulator: FC = () => {
   };
 
   const inputStyle: CSSProperties = {
-    backgroundColor: colors.background.tertiary,
-    color: colors.text.primary,
-    border: `1px solid ${colors.border.secondary}`,
+    backgroundColor: colors.base.background.tertiary,
+    color: colors.base.text.primary,
+    border: `1px solid ${colors.base.border.primary}`,
     borderRadius: '0.375rem',
     padding: '0.5rem',
     width: '7rem',
@@ -125,16 +125,16 @@ export const InflationSimulator: FC = () => {
         </div>
         
         <div style={resultContainerStyle} className="md:text-left">
-          <p style={{ fontSize: '1.125rem', color: colors.text.secondary }}>
+          <p style={{ fontSize: '1.125rem', color: colors.base.text.secondary }}>
             Après {durationInYears} ans, avec une inflation de {annualInflationRate}% :
           </p>
-          <p style={{ fontSize: '2.25rem', fontWeight: 'bold', margin: '0.5rem 0', color: colors.accent.blue.primary }}>
+          <p style={{ fontSize: '2.25rem', fontWeight: 'bold', margin: '0.5rem 0', color: colors.base.text.primary }}>
             Votre pouvoir d'achat sera de {formatter.format(finalCapital)}.
           </p>
-          <p style={{ fontSize: '1.125rem', color: colors.semantic.error.primary }}>
+          <p style={{ fontSize: '1.125rem', color: colors.base.text.primary }}>
             Soit une perte de {formatter.format(purchasingPowerLoss)}.
           </p>
-          <div style={{ marginTop: '1.5rem', color: colors.text.secondary, fontStyle: 'italic' }}>
+          <div style={{ marginTop: '1.5rem', color: colors.base.text.secondary, fontStyle: 'italic' }}>
             <p>🛒</p>
             <p>Ici viendra l'animation du caddie qui se vide.</p>
           </div>

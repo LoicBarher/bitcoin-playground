@@ -1,18 +1,37 @@
-import type { FC } from "react";
-import { MondeBleuPage, MondeOrangePage, MondeVertPage } from "../../Page";
-import { useRouterContext } from "../hooks";
-import { ROUTE_NAME } from "../data/";
+import { type FC } from "react";
+import {
+  MondeOrangePage,
+  MondeVertPage,
+  MondeBleu111Page,
+  MondeBleu112Page,
+  MondeBleu113Page,
+  MondeBleu114Page,
+} from "../../Page";
+import { ROUTE_NAME, useRouterContext } from "../../Routing";
+import { HomePage } from "../../Page";
 
 export const AppRouter: FC = () => {
   const { currentPage } = useRouterContext();
+
   switch (currentPage) {
-    case ROUTE_NAME.MondeBleu:
-      return <MondeBleuPage />;
+    case ROUTE_NAME.HomePage:
+      return <HomePage />;
+    case ROUTE_NAME.MondeBleu_1_1_1:
+      return <MondeBleu111Page />;
+    case ROUTE_NAME.MondeBleu_1_1_2:
+      return <MondeBleu112Page />;
+    case ROUTE_NAME.MondeBleu_1_1_3:
+      return <MondeBleu113Page />;
+    case ROUTE_NAME.MondeBleu_1_1_4:
+      return <MondeBleu114Page />;
+
     case ROUTE_NAME.MondeOrange:
       return <MondeOrangePage />;
+
     case ROUTE_NAME.MondeVert:
       return <MondeVertPage />;
+
     default:
-      return <MondeBleuPage />;
+      return <HomePage />;
   }
 };

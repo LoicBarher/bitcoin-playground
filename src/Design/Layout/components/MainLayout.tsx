@@ -12,28 +12,33 @@ export const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
     display: "flex",
     flexDirection: "column",
     minHeight: "100vh",
-    backgroundColor: colors.background.primary,
-    color: colors.text.primary,
   };
 
   const bodyContainerStyle: CSSProperties = {
+    backgroundColor: colors.base.background.secondary,
+    color: colors.base.text.secondary,
     display: "flex",
     flexDirection: "row",
-    flex: "1 1 auto", // Propriété clé : fait en sorte que cette boîte prenne toute la hauteur disponible
+    flex: "1 1 auto",
   };
 
   const navContainerStyle: CSSProperties = {
-    width: "16rem",
-    flexShrink: 0, // Empêche la NavBar de rétrécir
+    backgroundColor: colors.base.background.primary,
+    width: "19rem",
+    flexShrink: 0,
+    fontSize: "0.875rem",
+    lineHeight: "1.25rem",
+    color: colors.base.text.secondary,
+    fontWeight: 700,
   };
 
   const mainContentStyle: CSSProperties = {
     flex: "1 1 auto",
     paddingTop: "3rem",
+    paddingLeft: "2rem",
+    paddingRight: "2rem",
     paddingBottom: "3rem",
-    paddingLeft: "7rem",
-    paddingRight: "7rem",
-    overflowY: 'auto',
+    overflowY: "auto",
   };
 
   return (

@@ -10,8 +10,8 @@ export const ThemeToggle: FC = () => {
   // Le style de base est maintenant défini à l'intérieur du composant
   // pour accéder aux couleurs dynamiques du thème.
   const baseButtonStyle: CSSProperties = {
-    backgroundColor: colors.background.secondary, // Utilise la couleur de fond du thème
-    border: `1px solid ${colors.border.primary}`, // Utilise la couleur de bordure du thème
+    backgroundColor: colors.base.background.secondary, // Utilise la couleur de fond du thème
+    border: `1px solid ${colors.base.border.primary}`, // Utilise la couleur de bordure du thème
     borderRadius: "9999px",
     padding: "0.5rem",
     cursor: "pointer",
@@ -23,7 +23,7 @@ export const ThemeToggle: FC = () => {
   };
 
   const hoverStyle: CSSProperties = {
-    backgroundColor: colors.background.hover,
+    backgroundColor: colors.base.background.hover,
   };
 
   const finalStyle = {
