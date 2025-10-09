@@ -13,9 +13,9 @@ export const Header: FC = () => {
     justifyContent: "space-between",
     alignItems: "center",
     padding: "1rem 2rem",
-    backgroundColor: colors.background.secondary,
-    borderBottom: `1px solid ${colors.border.primary}`,
-    height: "6rem",
+    backgroundColor: colors.base.background.primary,
+    borderBottom: `1px solid ${colors.base.border.primary}`,
+    height: "4rem",
     width: "100%",
   };
 
@@ -26,7 +26,7 @@ export const Header: FC = () => {
     cursor: "pointer",
     background: "none",
     border: "none",
-    color: colors.text.primary,
+    color: colors.base.text.primary,
     fontSize: "1.25rem",
     fontWeight: "bold",
   };
@@ -35,7 +35,7 @@ export const Header: FC = () => {
     <header style={headerStyle}>
       <button
         style={logoContainerStyle}
-        onClick={() => setCurrentPage(ROUTE_NAME.MondeBleu)}
+        onClick={() => setCurrentPage(ROUTE_NAME.HomePage)}
         aria-label="Retour à la page d'accueil"
       >
         <BitcoinIcon />

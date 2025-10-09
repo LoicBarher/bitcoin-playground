@@ -13,27 +13,27 @@ export const MondeVertPage: FC = () => {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
-    color: colors.text.primary,
+    color: colors.base.text.primary,
   };
 
   const titleStyle: CSSProperties = {
     fontSize: "2.5rem",
     fontWeight: "bold",
-    color: colors.text.primary,
+    color: colors.base.text.primary,
   };
 
   const subtitleStyle: CSSProperties = {
     fontSize: "1.25rem",
-    color: colors.text.secondary,
+    color: colors.base.text.secondary,
     maxWidth: "800px",
   };
 
   const placeholderStyle: CSSProperties = {
-    border: `2px dashed ${colors.border.secondary}`,
+    border: `2px dashed ${colors.base.border.secondary}`,
     borderRadius: "0.75rem",
     padding: "4rem",
     textAlign: "center",
-    color: colors.text.secondary,
+    color: colors.base.text.secondary,
     marginTop: "2rem",
   };
 

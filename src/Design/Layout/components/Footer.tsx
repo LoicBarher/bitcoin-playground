@@ -8,9 +8,9 @@ export const Footer: FC = () => {
   const footerStyle: CSSProperties = {
     padding: "1rem 2rem",
     textAlign: "center",
-    backgroundColor: colors.background.secondary,
-    borderTop: `1px solid ${colors.border.primary}`,
-    color: colors.text.secondary,
+    backgroundColor: colors.base.background.primary,
+    borderTop: `1px solid ${colors.base.border.primary}`,
+    color: colors.base.text.secondary,
     fontSize: "0.875rem",
   };
 

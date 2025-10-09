@@ -15,7 +15,7 @@ export const ThemeProvider: FC<{ children: ReactNode }> = ({ children }) => {
 
   useEffect(() => {
     const colors = THEME_COLORS[theme];
-    document.body.style.backgroundColor = colors.background.primary;
+    document.body.style.backgroundColor = colors.base.background.primary;
   }, [theme]); // Cet effet se déclenche à chaque changement de thème
 
 
