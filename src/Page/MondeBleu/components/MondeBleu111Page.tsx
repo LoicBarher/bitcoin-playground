@@ -1,91 +1,132 @@
 import { type FC, type CSSProperties } from "react";
-import { useThemeContext, THEME_COLORS } from "../../../Design";
-import { PageNavigation } from "../../components";
+import { Callout, KeywordHighlight } from "../../../Design";
+import { ChapterPrelude, PageNavigation } from "../../components";
+import { CreditCreationSimulator } from "./CreditCreationSimulator";
 
-const pageStyle: CSSProperties = {
-  display: "flex",
-  flexDirection: "column",
-  gap: "2rem",
-};
-
-const titleStyle: CSSProperties = {
-  fontSize: "2.5rem",
-  fontWeight: "bold",
-  marginBottom: "1rem",
-};
-
-const paragraphStyle: CSSProperties = {
-  fontSize: "1.125rem",
-  lineHeight: "1.75",
-  maxWidth: "800px", // Limite la largeur pour une meilleure lisibilité
-};
-
-const highlightStyle: CSSProperties = {
-  padding: "1rem",
-  borderRadius: "0.5rem",
-  margin: "1rem 0",
-};
-
-/**
- * Leçon 1.1.1: D'où Vient la Monnaie ?
- */
 export const MondeBleu111Page: FC = () => {
-  const { theme } = useThemeContext();
-  const colors = THEME_COLORS[theme];
-
-  const dynamicTitleStyle: CSSProperties = {
-    ...titleStyle,
-    color: colors.base.text.primary,
+  const pageContainerStyle: CSSProperties = {
+    display: "flex",
+    flexDirection: "column",
+    paddingLeft: "5rem",
+    paddingRight: "5rem",
   };
 
-  const dynamicParagraphStyle: CSSProperties = {
-    ...paragraphStyle,
-    color: colors.base.text.secondary,
+  const titleStyle: CSSProperties = {
+    fontSize: "2.5rem",
+    lineHeight: "2.5rem",
+    textAlign: "center",
+    fontWeight: 400,
   };
 
-  const dynamicHighlightStyle: CSSProperties = {
-    ...highlightStyle,
-    backgroundColor: colors.base.background.secondary,
-    border: `1px solid ${colors.base.border.primary}`,
+  const sectionStyle: CSSProperties = {
+    fontSize: "1rem",
+    letterSpacing: "0.05rem",
+    lineHeight: 1.625,
   };
 
   return (
-    <div style={pageStyle}>
+    <div style={pageContainerStyle}>
       <header>
-        <h1 style={dynamicTitleStyle}>
-          D'où Vient la Monnaie ? La Magie du Crédit Bancaire
-        </h1>
+        <h1 style={titleStyle}>D'où vient la monnaie ?</h1>
       </header>
-
+      <ChapterPrelude>
+        <strong>L'essentiel de cette section </strong>: Plus de 95% de la
+        monnaie que nous utilisons est créée par les banques commerciales, au
+        moment où elles accordent un prêt.
+      </ChapterPrelude>
       <section>
-        <p style={dynamicParagraphStyle}>
-          Contrairement à l'idée reçue, l'argent que nous utilisons n'est pas
-          simplement imprimé par l'État. En réalité, plus de 95 % de la monnaie
-          en circulation est créée par les banques commerciales (BNP, Société
-          Générale, etc.) lorsqu'elles accordent un prêt.
+        <p style={sectionStyle}>
+          Alors, savez-vous d'où vient l'argent ? 🤔
+          <br />
+          Si vous répondez{" "}
+          <i>« de la planche à billets de la banque centrale »</i>
+          , alors vous êtes tombés dans le piège. 😉
+          <br />
+          Lisez attentivement ce qui suit, vous allez être surpris :
+          <Callout title={"D'où vient l'argent ?"}>
+            Plus de 95% de notre monnaie n'est ni imprimée par l'État ni
+            imprimée par les Banques Centrales, mais créée{" "}
+            <i>*comme par magie*</i> par les banques commerciales (du style BNP
+            Paribas, Caisse d'Épargne, ...) à chaque fois qu'elles prêtent de
+            l'argent. 😲
+            <p>
+              Dès qu'elles accordent un prêt, par une simple écriture comptable
+              elles créent de l'argent à partir de rien.
+            </p>
+            <p>
+              Ces banques disposent donc en quelque sorte d'un pouvoir magique.
+              ✨
+            </p>
+          </Callout>
         </p>
-
-        <p style={dynamicParagraphStyle}>
-          C'est le principe des <strong>"crédits qui font les dépôts"</strong> :
+        <p style={sectionStyle}>
+          Vous voulez le voir de vos propres yeux ? Parfait. Passons à la
+          pratique.
+          <br />
+          Vous êtes maintenant un banquier, toutes mes félicitations ! (ou pas
+          😉)
         </p>
-
-        <div style={dynamicHighlightStyle}>
-          <p style={dynamicParagraphStyle}>
-            Quand vous empruntez 200 000 € pour un bien immobilier, la banque ne
-            prend pas cet argent dans les coffres ou sur le compte d'un autre
-            client. Par une simple écriture comptable, elle{" "}
-            <strong>crée cette somme</strong> et la crédite sur votre compte.
-            Cette nouvelle monnaie (qui est une dette pour vous) circule ensuite
-            dans l'économie lorsque vous payez le vendeur.
+        <Callout
+          icon={<span>🏡</span>}
+          title="Illustration concrète — M. Nicolas QuiPaye veut acheter une maison"
+        >
+          <p>
+            Nicolas QuiPaye a un super projet : être propriétaire de sa
+            résidence principale. Pour cela, il va faire une demande de prêt à
+            sa banque pour un montant de 200 000 €.
           </p>
-        </div>
-
-        <p style={dynamicParagraphStyle}>
-          💡 La grande majorité de l'euro ou du dollar n'est donc qu'une
-          promesse de dette inscrite dans les registres des banques.
+          <p>
+            Et c'est là que vous entrez en scène : vous êtes son banquier, vous
+            avez le pouvoir d'accomplir son rêve en lui accordant ce prêt.
+          </p>
+        </Callout>
+        <p style={sectionStyle}>
+          Mais avant de prendre les commandes, faisons un petit rappel de
+          vocabulaire en comptabilité. 🤓
+        </p>
+        <Callout title="Comptabilité — Quelques définitions essentielles">
+          <p>
+            <KeywordHighlight>ACTIF</KeywordHighlight>{" "}
+            <strong>
+              → C'est tout ce que vous possédez et qui a de la valeur.
+            </strong>{" "}
+            <br />
+            <i>Votre épargne, votre maison, votre téléphone...</i>
+          </p>
+          <p>
+            <KeywordHighlight>PASSIF</KeywordHighlight>{" "}
+            <strong>
+              → C'est la provenance de l'argent qui a payé tout ce que vous
+              possédez.
+            </strong>
+            <br />
+            <i>
+              L'argent peut venir de deux endroits :<br />- Des autres : c'est
+              une <u>dette</u>. <br />- De vous-même : c'est un{" "}
+              <u>capital propre</u>.
+            </i>
+          </p>
+          <p>
+            <KeywordHighlight>CRÉANCE</KeywordHighlight>{" "}
+            <strong>
+              → C'est une promesse officielle que quelqu'un va vous rendre
+              l'argent qu'il vous doit.
+            </strong>
+          </p>
+        </Callout>
+        <p style={sectionStyle}>
+          C'est bon ? Parfait ! 😊 <br /> Regardez le bilan de la banque de M.
+          QuiPaye : elle a déjà octroyé des prêts à des clients pour une valeur
+          de 1 000 000 €. <br />
+          Maintenant, il est temps d'accorder le prêt à votre client. 👇
+        </p>
+        <CreditCreationSimulator />
+        <p style={sectionStyle}>
+          Si tout ceci est clair pour vous, je vous propose de passer au second
+          aspect fondamental de notre économie :{" "}
+          <strong>les deux niveaux de monnaies</strong>.
         </p>
       </section>
-
       <PageNavigation />
     </div>
   );

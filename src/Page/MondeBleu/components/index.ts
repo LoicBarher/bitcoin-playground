@@ -1,5 +1,12 @@
-export { InflationSimulator } from "./InflationSimulator";
+export { CreditCreationSimulator } from "./CreditCreationSimulator";
+export { CompensationSimulator } from "./CompensationSimulator";
+export { DefaultSimulator } from "./DefaultSimulator";
+export { BalanceSheet } from "./BalanceSheet";
+export { YieldCurveSimulator } from "./YieldCurveSimulator";
 export { MondeBleu111Page } from "./MondeBleu111Page";
 export { MondeBleu112Page } from "./MondeBleu112Page";
 export { MondeBleu113Page } from "./MondeBleu113Page";
 export { MondeBleu114Page } from "./MondeBleu114Page";
+export { MondeBleu115Page } from "./MondeBleu115Page";
+export { MondeBleu116Page } from "./MondeBleu116Page";
+export { MondeBleu117Page } from "./MondeBleu117Page";

@@ -63,10 +63,13 @@ export const NavBar: FC = () => {
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
-      padding: "0.6rem 0.75rem",
+      paddingTop: "0.6rem",
+      paddingBottom: "0.6rem",
+      paddingLeft: `${0.5 + level * 0.5}rem`,
+      paddingRight: 0,
       textAlign: "left",
       fontSize: "0.875rem",
-      letterSpacing: "0.075rem",
+      letterSpacing: "0.05rem",
       cursor: "pointer",
       border: "none",
       transition: "background-color 0.2s, color 0.2s, font-size 0.2s",
@@ -77,7 +80,6 @@ export const NavBar: FC = () => {
       color: isDirectlyActive
         ? colors.base.text.primary
         : colors.base.text.secondary,
-      paddingLeft: `${0.5 + level * 0.5}rem`,
       outline: "none",
     };
 
@@ -106,7 +108,14 @@ export const NavBar: FC = () => {
     };
 
     const buttonContent = (
-      <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "0.75rem",
+          paddingRight: "1.5rem",
+        }}
+      >
         {item.icon && level === 0 && item.icon}
         <span>{item.label}</span>
       </div>

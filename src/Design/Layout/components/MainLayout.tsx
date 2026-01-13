@@ -16,27 +16,28 @@ export const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
 
   const bodyContainerStyle: CSSProperties = {
     backgroundColor: colors.base.background.secondary,
-    color: colors.base.text.secondary,
+    color: colors.base.text.primary,
     display: "flex",
     flexDirection: "row",
     flex: "1 1 auto",
+    textAlign: "justify",
   };
 
   const navContainerStyle: CSSProperties = {
     backgroundColor: colors.base.background.primary,
+    color: colors.base.text.secondary,
     width: "19rem",
     flexShrink: 0,
     fontSize: "0.875rem",
     lineHeight: "1.25rem",
-    color: colors.base.text.secondary,
     fontWeight: 700,
   };
 
   const mainContentStyle: CSSProperties = {
     flex: "1 1 auto",
     paddingTop: "3rem",
-    paddingLeft: "2rem",
-    paddingRight: "2rem",
+    paddingLeft: "12rem",
+    paddingRight: "12rem",
     paddingBottom: "3rem",
     overflowY: "auto",
   };

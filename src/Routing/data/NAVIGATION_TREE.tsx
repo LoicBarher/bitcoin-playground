@@ -1,14 +1,14 @@
-import { type NavigationItem, ROUTE_NAME } from '..';
-import { BitcoinIcon, MoneyIcon, ToolIcon } from '../../Design/icons';
+import { type NavigationItem, ROUTE_NAME } from "..";
+import { BitcoinIcon, MoneyIcon, ToolIcon } from "../../Design/icons";
 
 export const NAVIGATION_TREE: NavigationItem[] = [
   {
-    label: 'Le Problème',
+    label: "Le Problème",
     isPage: false,
     icon: <MoneyIcon />,
     children: [
       {
-        label: 'Le fonctionnement du système bancaire',
+        label: "Le fonctionnement du système bancaire",
         isPage: false,
         children: [
           {
@@ -18,17 +18,32 @@ export const NAVIGATION_TREE: NavigationItem[] = [
           },
           {
             id: ROUTE_NAME.MondeBleu_1_1_2,
-            label: 'Les deux niveaux de monnaies',
+            label: "Les deux niveaux de monnaies",
             isPage: true,
           },
           {
             id: ROUTE_NAME.MondeBleu_1_1_3,
-            label: 'Le Quantitative Easing',
+            label: "Le Quantitative Easing",
             isPage: true,
           },
           {
             id: ROUTE_NAME.MondeBleu_1_1_4,
-            label: 'Le cercle vicieux',
+            label: "Le moteur cassé",
+            isPage: true,
+          },
+          {
+            id: ROUTE_NAME.MondeBleu_1_1_5,
+            label: "L'Effet Cantillon",
+            isPage: true,
+          },
+          {
+            id: ROUTE_NAME.MondeBleu_1_1_6,
+            label: "L'Inflation",
+            isPage: true,
+          },
+          {
+            id: ROUTE_NAME.MondeBleu_1_1_7,
+            label: "En synthèse",
             isPage: true,
           },
         ],
@@ -38,30 +53,29 @@ export const NAVIGATION_TREE: NavigationItem[] = [
         isPage: false,
       },
       {
-        label: 'Les cycles économiques',
+        label: "Les cycles économiques",
         isPage: false,
       },
       {
-        label: 'Le problème du système socialiste',
+        label: "Le problème du système socialiste",
         isPage: false,
       },
       {
-        label: 'La méthodologie autrichienne',
+        label: "La méthodologie autrichienne",
         isPage: false,
       },
     ],
   },
   {
     id: ROUTE_NAME.MondeOrange,
-    label: 'La Solution',
+    label: "La Solution",
     isPage: true,
     icon: <BitcoinIcon />,
   },
   {
     id: ROUTE_NAME.MondeVert,
-    label: 'La Pratique',
+    label: "La Pratique",
     isPage: true,
     icon: <ToolIcon />,
   },
 ];
-
