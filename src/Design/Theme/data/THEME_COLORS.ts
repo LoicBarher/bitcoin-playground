@@ -4,7 +4,7 @@ export const THEME_COLORS = {
       background: {
         primary: "#020617",
         secondary: "#0f172a",
-        tertiary: "#1e293b",
+        tertiary: "#F8FAFC",
         hover: "rgba(255, 255, 255, 0.08)",
       },
       text: {
@@ -19,20 +19,22 @@ export const THEME_COLORS = {
     },
     blue: {
       background: {
-        primary: "#334155",
+        primary: "#172554",
+        secondary: "#6366F1",
       },
       text: {
-        primary: "#93c5fd",
-        secondary: "#2563eb",
+        primary: "#bfdbfe",
+        secondary: "#93c5fd",
       },
       border: {
         primary: "#475569",
-        secondary: "#3B82F6",
+        secondary: "#93c5fd",
       },
     },
     orange: {
       background: {
-        primary: "#431407",
+        primary: "#9A3412",
+        secondary: "#F97316",
       },
       text: {
         primary: "#fdba74",
@@ -45,7 +47,8 @@ export const THEME_COLORS = {
     },
     emerald: {
       background: {
-        primary: "#022C22",
+        primary: "#065F46",
+        secondary: "#10B981",
       },
       text: {
         primary: "#6ee7b7",
@@ -61,6 +64,23 @@ export const THEME_COLORS = {
       strong:
         "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
       bottom: "box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px",
+    },
+    semantic: {
+      success: {
+        text: "#34D399",
+        border: "#10B981",
+        background: "#064e3b",
+      },
+      error: {
+        text: "#F87171",
+        border: "#EF4444",
+        background: "#7f1d1d",
+      },
+      info: {
+        text: "#60A5FA",
+        border: "#3B82F6",
+        background: "rgba(59, 130, 246, 0.1)",
+      },
     },
   },
   light: {
@@ -83,7 +103,8 @@ export const THEME_COLORS = {
     },
     blue: {
       background: {
-        primary: "#172554",
+        primary: "#334155",
+        secondary: "#6366F1",
       },
       text: {
         primary: "#172554",
@@ -96,7 +117,8 @@ export const THEME_COLORS = {
     },
     orange: {
       background: {
-        primary: "#431407",
+        primary: "#9A3412",
+        secondary: "#F97316",
       },
       text: {
         primary: "#ea580c",
@@ -109,7 +131,8 @@ export const THEME_COLORS = {
     },
     emerald: {
       background: {
-        primary: "#022C22",
+        primary: "#065F46",
+        secondary: "#10B981",
       },
       text: {
         primary: "#059669",
@@ -125,6 +148,23 @@ export const THEME_COLORS = {
       strong:
         "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
       bottom: "box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px",
+    },
+    semantic: {
+      success: {
+        text: "#34D399",
+        border: "#10B981",
+        background: "rgba(16, 185, 129, 0.1)",
+      },
+      error: {
+        text: "#F87171", // Red-400
+        border: "#EF4444", // Red-500
+        background: "rgba(239, 68, 68, 0.1)",
+      },
+      info: {
+        text: "#60A5FA",
+        border: "#3B82F6",
+        background: "rgba(59, 130, 246, 0.1)",
+      },
     },
   },
 };

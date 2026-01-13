@@ -6,6 +6,9 @@ import {
   MondeBleu112Page,
   MondeBleu113Page,
   MondeBleu114Page,
+  MondeBleu115Page,
+  MondeBleu116Page,
+  MondeBleu117Page,
 } from "../../Page";
 import { ROUTE_NAME, useRouterContext } from "../../Routing";
 import { HomePage } from "../../Page";
@@ -24,6 +27,12 @@ export const AppRouter: FC = () => {
       return <MondeBleu113Page />;
     case ROUTE_NAME.MondeBleu_1_1_4:
       return <MondeBleu114Page />;
+    case ROUTE_NAME.MondeBleu_1_1_5:
+      return <MondeBleu115Page />;
+    case ROUTE_NAME.MondeBleu_1_1_6:
+      return <MondeBleu116Page />;
+    case ROUTE_NAME.MondeBleu_1_1_7:
+      return <MondeBleu117Page />;
 
     case ROUTE_NAME.MondeOrange:
       return <MondeOrangePage />;
